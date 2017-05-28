@@ -1,0 +1,37 @@
+.contact_us {
+    background-image: url(bg_contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 28px 0 58px;
+    &__title {
+    text-align: center;
+    font-family: $font-stack-1;
+    font-size: 20px;
+    font-weight: 400px;
+    color: white;
+    margin-bottom: 29px;
+    padding-top: 28px;
+    letter-spacing: 1.2px;
+    padding-left: 8px;
+    }
+    &__button {
+    background: transparent;
+    padding: 8px 30px;
+    border: solid 2px white;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    }
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    }
+
+.contact_us__button:active {
+    background: lighten( $button_color, 10% );
+    transition: 0.7s;
+    outline: none;
+}

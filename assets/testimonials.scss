@@ -1,0 +1,93 @@
+.testimonials {
+padding: 73px 0 60px;
+    background: #f3f3f3;
+    &--title {
+letter-spacing: 4px;
+    padding-left: 15px;
+}
+}
+
+
+.slider_testimonials__wrapper {
+    background: white;
+    display: flex;
+    height: 318px;
+    padding: 42px 122px 0 100px;
+}
+
+.slider_testimonials__content {
+   font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+     color: #81868e;
+    margin-left: 68px;
+}
+
+.slider_testimonials__description {
+    line-height: 28px;
+}
+
+.person-title {
+    color: #19bd9a;
+}
+
+.slider_testimonials__person {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.person-position {
+    font-size: 14px;
+    color: #464646;
+    letter-spacing: 2px;
+}
+
+.slider_testimonials .slick-dots {
+    top: 228px;
+}
+
+.slick-dots li button:before    
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 2 ;
+    left: 0;
+    bottom: 4px ;
+
+    width: 20px;
+    height: 20px;
+
+    content: '○';
+    text-align: center;
+
+    opacity: 1;
+    color: #19bd9a;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #19bd9a;
+    content: '•';
+    font-family: 'slick';
+    font-size: 30px; //was 10
+    line-height: 20px;
+    position: absolute;
+   // top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+.slick-dots li {
+    margin: 0; 
+}
