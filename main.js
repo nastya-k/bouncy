@@ -2,19 +2,17 @@ $(document).ready(function () {
     
 // fixed header
     
-var wrap = $("#scroll");
-var fixedHeader = $("#fixed_header");
-var $win = $(window);
-var winH = $win.height();
 
-wrap.on("scroll", function(e) {
-    
-  if (this.scrollTop > winH) {
-    fixedHeader.addClass("fixed_header--fix-after-scrolled");
-  } else {
-    fixedHeader.removeClass("fixed_header--fix-after-scrolled");
-  }
-  
+$(window).scroll(function(){
+  var sticky = $('.navigation'),
+      scroll = $(window).scrollTop(),
+      win = $(window),
+      winH = win.height(),
+      stickyButton = $(".navigation a");
+
+
+  if (scroll >= winH) sticky.addClass('fixed_header--fix-after-scrolled') & stickyButton.removeClass('navigation_button').addClass('fixed_header--button');
+  else sticky.removeClass('fixed_header--fix-after-scrolled') & stickyButton.removeClass('fixed_header--button').addClass('navigation_button');
 });
     
     
